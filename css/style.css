@@ -1,0 +1,465 @@
+/* reset no css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  line-height: 1.125;
+}
+
+h2 {
+  line-height: 1;
+}
+
+p {
+  line-height: 1.33;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+ul {
+  list-style: none;
+}
+
+/* container que centraliza os elementos ao centro da tela */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* navegação do menu principal do site */
+.header {
+  padding: 40px 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.lista-menu a {
+  font-size: 1.125rem;
+  color: #141414;
+}
+
+/* perfil do profissional */
+.perfil {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 140px;
+  padding: 40px 20px;
+}
+
+.titulo-perfil {
+  position: relative;
+  font-size: 4.5rem;
+  margin-bottom: 30px;
+}
+
+.titulo-perfil::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 100px;
+  top: -15px;
+  left: -40px;
+  background-image: url("../img/detalhe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.localizacao {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+/* seção referente a experiência do profissional */
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 140px;
+  padding: 40px 20px;
+}
+
+.subtitulo-experiencia {
+  max-width: 4ch;
+  font-size: 8rem;
+  text-transform: uppercase;
+  word-break: break-all;
+  color: #e0e0e0;
+}
+
+.intro-experiencia {
+  max-width: 40ch;
+  font-size: 1.5rem;
+  color: #525252;
+  margin-bottom: 60px;
+}
+
+.intro-experiencia strong {
+  color: #141414;
+}
+
+.empresa {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.empresa::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  top: 20px;
+  left: -4px;
+  background: linear-gradient(#b6f829, #67dd0a);
+}
+
+.ano-empresa {
+  position: absolute;
+  top: 22px;
+  left: -100px;
+  width: 80px;
+  font-size: 0.875rem;
+  text-align: right;
+  color: #525252;
+}
+
+.resumo-experiencia {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252;
+}
+
+.nome-empresa,
+.cargo-empresa {
+  font-size: 1.125rem;
+  color: #000000;
+  font-weight: 700;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 10px;
+}
+
+.stack li {
+  font-size: 0.875rem;
+  background: #ffffff;
+  color: #141414;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* seção referente a formação do profissional */
+.bg-formacao {
+  background: #141414;
+}
+
+.formacao {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 140px;
+  padding: 120px 20px;
+}
+
+.formacao::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 100px;
+  bottom: -50px;
+  left: 20px;
+  background: url("../img/detalhe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.subtitulo-formacao {
+  max-width: 5ch;
+  font-size: 8rem;
+  text-transform: uppercase;
+  word-break: break-all;
+  color: #000000;
+}
+
+.lista-formacoes {
+  display: grid;
+  gap: 58px;
+}
+
+.intro-formacoes {
+  max-width: 40ch;
+  font-size: 1.5rem;
+  color: #a3a3a3;
+}
+
+.intro-formacoes strong {
+  color: #ffffff;
+}
+
+.formacoes {
+  display: flex;
+  gap: 26px;
+}
+
+.formacao-concluida {
+  flex: 1;
+  display: grid;
+  background: #090909;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.titulo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+}
+
+.nome-curso {
+  position: relative;
+  font-size: 1.125rem;
+  color: #ffffff;
+  margin-block: 10px 50px;
+}
+
+.nome-curso::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  left: -24px;
+  background: linear-gradient(#b6f829, #67dd0a);
+}
+
+.nome-instituicao {
+  align-self: end;
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+.cursos h3,
+.idiomas h3 {
+  position: relative;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #8f8f8f;
+  margin-bottom: 30px;
+}
+
+.cursos h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("../img/cursos.svg");
+  width: 24px;
+  height: 24px;
+  left: -36px;
+  top: -5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lista-cursos,
+.lista-idiomas {
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+
+.lista-cursos li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.lista-cursos span,
+.lista-idiomas span {
+  color: #8f8f8f;
+}
+
+.idiomas h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("../img/idiomas.svg");
+  width: 24px;
+  height: 24px;
+  left: -36px;
+  top: -5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lista-idiomas li {
+  margin-bottom: 20px;
+}
+
+/* seção referente ao rodapé do site */
+.bg-contato {
+  background: #000000;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 100px;
+  padding: 120px 20px 60px 20px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  color: #cccccc;
+}
+
+.lista-contatos li {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.footer-copy {
+  font-size: 1.125rem;
+  color: #8f8f8f;
+}
+
+/* responsividade */
+@media (max-width: 1000px) {
+  .perfil,
+  .experiencia,
+  .formacao {
+    gap: 100px;
+  }
+
+  .titulo-perfil {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .perfil,
+  .experiencia,
+  .formacao {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .lista-menu {
+    gap: 10px;
+  }
+
+  .lista-menu a {
+    display: inline-block;
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  .titulo-perfil::before {
+    width: 30px;
+    height: 10px;
+    left: 0;
+  }
+
+  .experiencia,
+  .formacao,
+  .contato {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .subtitulo-experiencia,
+  .subtitulo-formacao {
+    font-size: 3rem;
+    text-transform: capitalize;
+    word-break: normal;
+  }
+
+  .subtitulo-experiencia {
+    color: #141414;
+  }
+
+  .subtitulo-formacao {
+    color: #ffffff;
+  }
+
+  .cursos h3::before,
+  .idiomas h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+
+  .ano-empresa {
+    position: initial;
+    width: initial;
+    text-align: left;
+    order: 1;
+  }
+
+  .ano-empresa::before {
+    content: "Ano: ";
+  }
+}
+
+@media (max-width: 600px) {
+  .lista-menu,
+  .formacoes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .perfil {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil img {
+    display: none;
+  }
+
+  .titulo-perfil {
+    font-size: 2rem;
+  }
+
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
